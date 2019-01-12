@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		EAFBB15221E9F5DF004DED85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFBB15121E9F5DF004DED85 /* AppDelegate.swift */; };
-		EAFBB15421E9F5DF004DED85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFBB15321E9F5DF004DED85 /* ViewController.swift */; };
-		EAFBB15721E9F5DF004DED85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFBB15521E9F5DF004DED85 /* Main.storyboard */; };
+		EAFBB15421E9F5DF004DED85 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFBB15321E9F5DF004DED85 /* ToDoListViewController.swift */; };
 		EAFBB15921E9F5E2004DED85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFBB15821E9F5E2004DED85 /* Assets.xcassets */; };
 		EAFBB15C21E9F5E3004DED85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFBB15A21E9F5E3004DED85 /* LaunchScreen.storyboard */; };
+		EAFBB16421E9F86F004DED85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFBB16321E9F86E004DED85 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EAFBB14E21E9F5DF004DED85 /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFBB15121E9F5DF004DED85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAFBB15321E9F5DF004DED85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EAFBB15621E9F5DF004DED85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAFBB15321E9F5DF004DED85 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 		EAFBB15821E9F5E2004DED85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAFBB15B21E9F5E3004DED85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAFBB15D21E9F5E3004DED85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFBB16321E9F86E004DED85 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				EAFBB15121E9F5DF004DED85 /* AppDelegate.swift */,
-				EAFBB15321E9F5DF004DED85 /* ViewController.swift */,
-				EAFBB15521E9F5DF004DED85 /* Main.storyboard */,
+				EAFBB15321E9F5DF004DED85 /* ToDoListViewController.swift */,
+				EAFBB16321E9F86E004DED85 /* Main.storyboard */,
 				EAFBB15821E9F5E2004DED85 /* Assets.xcassets */,
 				EAFBB15A21E9F5E3004DED85 /* LaunchScreen.storyboard */,
 				EAFBB15D21E9F5E3004DED85 /* Info.plist */,
@@ -122,9 +122,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAFBB16421E9F86F004DED85 /* Main.storyboard in Resources */,
 				EAFBB15C21E9F5E3004DED85 /* LaunchScreen.storyboard in Resources */,
 				EAFBB15921E9F5E2004DED85 /* Assets.xcassets in Resources */,
-				EAFBB15721E9F5DF004DED85 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAFBB15421E9F5DF004DED85 /* ViewController.swift in Sources */,
+				EAFBB15421E9F5DF004DED85 /* ToDoListViewController.swift in Sources */,
 				EAFBB15221E9F5DF004DED85 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +143,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EAFBB15521E9F5DF004DED85 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EAFBB15621E9F5DF004DED85 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EAFBB15A21E9F5E3004DED85 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
