@@ -11,12 +11,14 @@ import UIKit
 class ToDoListViewController: UITableViewController {
 
     var list = ["buy good","do anything","move on"]
-    
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        if let items = defaults.array(forKey: "ItemSaved") as? [String]{
+           list = items
+        }
     }
 //MARK-tabelViewDataSourceMethods
     
@@ -58,6 +60,9 @@ class ToDoListViewController: UITableViewController {
         let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
             //what will happen when user press the button
             self.list.append(textIt.text!)
+            
+            self.defaults.set(self.list, forKey: "ItemSaved")
+            
             self.tableView.reloadData()
         }
         
